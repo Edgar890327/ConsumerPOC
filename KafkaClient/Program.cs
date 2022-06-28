@@ -32,7 +32,7 @@ namespace KafkaClient
 
             using (var consumer = new ConsumerBuilder<string, string>(consumerConfig).Build())
             {
-                consumer.Subscribe(new string[] { "NurseCreatedEvent", "NurseDispatchedvent", "NurseUpdatedEvent", "NurseReleasedEvent" });
+                consumer.Subscribe(new string[] { "NurseCreatedEvent", "NurseDispatchedEvent", "NurseUpdatedEvent", "NurseReleasedEvent" });
                 
                 try
                 {
